@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  @media (max-width: 1000px) {
+    .Flex {
+      display: flex;
+      justify-content: start;
+    }
+    .SignInUpFlex {
+      display: flex;
+      justify-content: center;
+    }
+    .Mt-14 {
+      margin-top: 2rem; /* Adjust as needed */
+    }
+    .Image-container {
+      display: none; /* Hide the image by default */
+    }
+    .Width {
+      width: 100%;
+    }
+    .Justify {
+      justify-content: space-between;
+    }
+  }
+  
+  @media (min-width: 1201px) {
+    .Image-container {
+      display: block; /* Show the image when above 1200px */
+    }
+    .Width {
+      width: 65%;
+    }
+  }
+
+  .Shadow {
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+}
